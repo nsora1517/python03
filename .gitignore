@@ -1,0 +1,13 @@
+# mypy
+.mypy_cache/
+
+# Python bytecode cache
+__pycache__/
+*.py[cod]
+
+# pytest / coverage (念のため)
+.pytest_cache/
+.coverage
+
+# 学習用の練習ファイル（提出対象外）
+練習.py
