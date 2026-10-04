@@ -28,6 +28,7 @@ def main() -> None:
     print(f"It includes: X={coord[0]}, Y={coord[1]}, Z={coord[2]}")
     distance = math.sqrt(coord[0]**2 + coord[1]**2 + coord[2]**2)
     print(f"Distance to center: {round(distance, 4)}")
+    print("")
     print("Get a second set of coordinates")
     coord_second = get_player_pos()
     distance_second = math.sqrt(

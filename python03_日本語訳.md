@@ -264,6 +264,7 @@ Enter new coordinates as floats in format 'x,y,z': 1.0 , 2.5, 3.0
 Got a first tuple: (1.0, 2.5, 3.0)
 It includes: X=1.0, Y=2.5, Z=3.0
 Distance to center: 4.0311
+
 Get a second set of coordinates
 Enter new coordinates as floats in format 'x,y,z': 4,abc,5
 Error on parameter 'abc': could not convert string to float: 'abc'
