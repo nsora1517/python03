@@ -23,9 +23,9 @@ def main() -> None:
     aver = round(sum(score_dict.values()) / len(score_dict), 2)
     print(f"Score average is {aver}")
 
-    high_dict = {name: score_dict[name] for name in score_dict if score_dict[name] > aver}
+    high_dict = {name: score_dict[name] for name in score_dict
+                 if score_dict[name] > aver}
     print(f"High scores: {high_dict}")
-
 
 
 if __name__ == "__main__":
