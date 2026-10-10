@@ -9,7 +9,7 @@ all_achiev = ['Crafting Genius', 'Strategist', 'World Savior', 'Speed Runner',
 
 
 def gen_player_achievements() -> set[str]:
-    num = random.randint(1, len(all_achiev))
+    num = random.randint(len(all_achiev) // 3, len(all_achiev) * 2 // 3)
     achiev = random.sample(all_achiev, num)
     return set(achiev)
 
