@@ -12,6 +12,8 @@ def main() -> None:
             continue
         try:
             num = int(card[1])
+            if num <= 0:
+                raise ValueError(f"Inventory with a value of 0 or less is invalid")
         except ValueError as e:
             print(f"Quantity error for '{card[0]}': {e}")
             continue
