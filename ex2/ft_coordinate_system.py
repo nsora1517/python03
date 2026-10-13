@@ -23,6 +23,7 @@ def get_player_pos() -> tuple[float, float, float]:
 def main() -> None:
     try:
         print("=== Game Coordinate System ===")
+        print()
         print("Get a first set of coordinates")
         coord = get_player_pos()
         print(f"Got a first tuple: {coord}")
