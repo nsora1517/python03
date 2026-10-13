@@ -21,22 +21,25 @@ def get_player_pos() -> tuple[float, float, float]:
 
 
 def main() -> None:
-    print("=== Game Coordinate System ===")
-    print("Get a first set of coordinates")
-    coord = get_player_pos()
-    print(f"Got a first tuple: {coord}")
-    print(f"It includes: X={coord[0]}, Y={coord[1]}, Z={coord[2]}")
-    distance = math.sqrt(coord[0]**2 + coord[1]**2 + coord[2]**2)
-    print(f"Distance to center: {round(distance, 4)}")
-    print()
-    print("Get a second set of coordinates")
-    coord_second = get_player_pos()
-    distance_second = math.sqrt(
-        (coord_second[0] - coord[0])**2
-        + (coord_second[1] - coord[1])**2
-        + (coord_second[2] - coord[2])**2)
-    print("Distance between the 2 sets of coordinates:"
-          f" {round(distance_second, 4)}")
+    try:
+        print("=== Game Coordinate System ===")
+        print("Get a first set of coordinates")
+        coord = get_player_pos()
+        print(f"Got a first tuple: {coord}")
+        print(f"It includes: X={coord[0]}, Y={coord[1]}, Z={coord[2]}")
+        distance = math.sqrt(coord[0]**2 + coord[1]**2 + coord[2]**2)
+        print(f"Distance to center: {round(distance, 4)}")
+        print()
+        print("Get a second set of coordinates")
+        coord_second = get_player_pos()
+        distance_second = math.sqrt(
+            (coord_second[0] - coord[0])**2
+            + (coord_second[1] - coord[1])**2
+            + (coord_second[2] - coord[2])**2)
+        print("Distance between the 2 sets of coordinates:"
+              f" {round(distance_second, 4)}")
+    except ValueError as e:
+        print(f"\nerror: {e}")
 
 
 if __name__ == "__main__":
